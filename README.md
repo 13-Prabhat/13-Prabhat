@@ -1,16 +1,20 @@
-## Hi there 👋
+# Hi, I'm Prabhat 👋
 
-<!--
-**13-Prabhat/13-Prabhat** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## About Me
 
-Here are some ideas to get you started:
+🎓 B.Tech Computer Science Student
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+💻 Currently Learning:
+- Java
+- Data Structures & Algorithms
+- Git & GitHub
+- Bash Scripting
+
+🎯 Current Goals:
+- Build strong development skills
+- Contribute to Open Source
+- Become a Backend Developer
+
+## Connect With Me
+
+💼 LinkedIn: www.linkedin.com/in/prabhat-kumar-choudhary-249466314
