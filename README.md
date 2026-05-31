@@ -13,7 +13,7 @@
 🎯 Current Goals:
 - Build strong development skills
 - Contribute to Open Source
-- Become a Backend Developer
+- Build Backend Development Skills
 
 ## Connect With Me
 
