@@ -1,9 +1,9 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Hi%20There,%20I'm%20Prabhat%20👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=CSE%20Student%20%7C%20Aspiring%20Ethical%20Hacker%20%7C%20Data%20Science%20Builder&descAlignY=58&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Hi%20There,%20I'm%20Prabhat%20👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Computer%20Science%20Student%20%7C%20Software%20Developer%20%7C%20Open%20Source%20Contributor&descAlignY=58&descSize=16" width="100%"/>
 
 <a href="https://github.com/13-Prabhat">
-  <img src="https://readme-typing-svg.demolab.com/?lines=Building+towards+Ethical+Hacking+%26+Cybersecurity;First-year+B.Tech+CSE+%40+Galgotias+University;Learning+in+public,+one+commit+at+a+time;Open+to+internships+%26+collaborations!&font=Fira+Code&center=true&width=650&height=45&color=58A6FF&vCenter=true&size=22&pause=1200" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?lines=Building+towards+Ethical+Hacking+%26+Cybersecurity;Third-year+B.Tech+CSE+%40+Galgotias+University;Learning+in+public,+one+commit+at+a+time;Open+to+internships+%26+collaborations!&font=Fira+Code&center=true&width=650&height=45&color=58A6FF&vCenter=true&size=22&pause=1200" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -25,8 +25,8 @@
 ```python
 class Prabhat:
     def __init__(self):
-        self.role        = "First-year B.Tech CSE Student"
-        self.university  = "Galgotias University, Batch 2028"
+        self.role        = "Third-year B.Tech CSE Student"
+        self.university  = "Galgotias University"
         self.location    = "New Delhi / Bihar, India"
         self.focus       = "Ethical Hacking & Cybersecurity"
         self.currently   = ["Python", "Java", "Data Structures & Algorithms", "Bash"]
@@ -136,14 +136,22 @@ Scan, order, and pay at a restaurant table with no waiters and no printed menus.
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=13-Prabhat&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=13-Prabhat&show_icons=true&theme=tokyonight&hide_border=true" />
 <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=13-Prabhat&layout=compact&theme=tokyonight&hide_border=true" />
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=13-Prabhat&theme=tokyonight&hide_border=true" />
+<img src="https://streak-stats.demolab.com/?user=13-Prabhat&theme=tokyonight&hide_border=true" />
 
 </div>
+
+> ⚙️ **If these images don't load:** the public `github-readme-stats.vercel.app` server is shared by thousands of GitHub profiles and constantly hits GitHub's API rate limit, so cards randomly break — this is a known limitation, not a mistake in the code. The fix is to host your own free copy:
+> 1. Go to [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats) and click **Deploy to Vercel** (top of the README)
+> 2. Log in with your GitHub account, keep default settings, deploy
+> 3. Vercel gives you a URL like `https://github-readme-stats-yourname.vercel.app`
+> 4. Replace `github-readme-stats.vercel.app` in the image links above with that URL
+>
+> Same applies to `streak-stats.demolab.com` — [ryo-ma/github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)'s sibling project [streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) has its own **Deploy to Vercel** button if you want a private instance for that too.
 
 ---
 
@@ -153,7 +161,40 @@ Scan, order, and pay at a restaurant table with no waiters and no printed menus.
 <img src="https://raw.githubusercontent.com/13-Prabhat/13-Prabhat/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </div>
 
-> ⚙️ **Setup note:** the snake animation above needs a one-time GitHub Action. Add `.github/workflows/snake.yml` from [Platane/snk](https://github.com/Platane/snk) to this same `13-Prabhat/13-Prabhat` repo, enable Actions, and it'll auto-render your live contribution graph as a snake game every day.
+> ⚙️ **This needs a one-time setup — it won't appear until you do this:**
+> 1. In your `13-Prabhat/13-Prabhat` repo, create the file `.github/workflows/snake.yml` with this content:
+> ```yaml
+> name: Generate Snake
+> on:
+>   schedule:
+>     - cron: "0 0 * * *"
+>   workflow_dispatch:
+>   push:
+>     branches:
+>       - main
+>
+> jobs:
+>   generate:
+>     permissions:
+>       contents: write
+>     runs-on: ubuntu-latest
+>     steps:
+>       - uses: Platane/snk@v3
+>         with:
+>           github_user_name: 13-Prabhat
+>           outputs: |
+>             dist/github-contribution-grid-snake.svg
+>             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+>       - uses: crazy-max/ghaction-github-pages@v4
+>         with:
+>           target_branch: output
+>           build_dir: dist
+>         env:
+>           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+> ```
+> 2. Go to your repo's **Settings → Actions → General → Workflow permissions** and set it to **Read and write permissions**
+> 3. Go to the **Actions** tab, find "Generate Snake", and click **Run workflow** once manually to trigger the first build
+> 4. It creates an `output` branch with the SVG — after that first run, the image in this README will start showing up, and it'll refresh daily on its own
 
 ---
 
