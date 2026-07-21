@@ -145,14 +145,6 @@ Scan, order, and pay at a restaurant table with no waiters and no printed menus.
 
 </div>
 
-> ⚙️ **If these images don't load:** the public `github-readme-stats.vercel.app` server is shared by thousands of GitHub profiles and constantly hits GitHub's API rate limit, so cards randomly break — this is a known limitation, not a mistake in the code. The fix is to host your own free copy:
-> 1. Go to [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats) and click **Deploy to Vercel** (top of the README)
-> 2. Log in with your GitHub account, keep default settings, deploy
-> 3. Vercel gives you a URL like `https://github-readme-stats-yourname.vercel.app`
-> 4. Replace `github-readme-stats.vercel.app` in the image links above with that URL
->
-> Same applies to `streak-stats.demolab.com` — [ryo-ma/github-profile-trophy](https://github.com/ryo-ma/github-profile-trophy)'s sibling project [streak-stats](https://github.com/DenverCoder1/github-readme-streak-stats) has its own **Deploy to Vercel** button if you want a private instance for that too.
-
 ---
 
 ## 🐍 Contribution Snake
@@ -160,41 +152,6 @@ Scan, order, and pay at a restaurant table with no waiters and no printed menus.
 <div align="center">
 <img src="https://raw.githubusercontent.com/13-Prabhat/13-Prabhat/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </div>
-
-> ⚙️ **This needs a one-time setup — it won't appear until you do this:**
-> 1. In your `13-Prabhat/13-Prabhat` repo, create the file `.github/workflows/snake.yml` with this content:
-> ```yaml
-> name: Generate Snake
-> on:
->   schedule:
->     - cron: "0 0 * * *"
->   workflow_dispatch:
->   push:
->     branches:
->       - main
->
-> jobs:
->   generate:
->     permissions:
->       contents: write
->     runs-on: ubuntu-latest
->     steps:
->       - uses: Platane/snk@v3
->         with:
->           github_user_name: 13-Prabhat
->           outputs: |
->             dist/github-contribution-grid-snake.svg
->             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
->       - uses: crazy-max/ghaction-github-pages@v4
->         with:
->           target_branch: output
->           build_dir: dist
->         env:
->           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-> ```
-> 2. Go to your repo's **Settings → Actions → General → Workflow permissions** and set it to **Read and write permissions**
-> 3. Go to the **Actions** tab, find "Generate Snake", and click **Run workflow** once manually to trigger the first build
-> 4. It creates an `output` branch with the SVG — after that first run, the image in this README will start showing up, and it'll refresh daily on its own
 
 ---
 
