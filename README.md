@@ -27,7 +27,7 @@ class Prabhat:
     def __init__(self):
         self.role        = "Third-year B.Tech CSE Student"
         self.university  = "Galgotias University"
-        self.location    = "New Delhi / Bihar, India"
+        self.location    = "Greater Noida , India"
         self.focus       = "Ethical Hacking & Cybersecurity"
         self.currently   = ["Python", "Java", "Data Structures & Algorithms", "Bash"]
         self.building_in = "Open Source + Data Science"
